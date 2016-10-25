@@ -91,5 +91,12 @@ describe('set-response-stream', function () {
     });
   });
 
+  it('should emit an error on the instance if the stream itself emits an error', function (done) {
+    const s = new (require('stream'))();
+    const stream = new SetResponseStream(s)
+      .on('error', (err) => done());
+
+    setImmediate(() => s.emit('error', new Error('weeee')));
+  });
 
 });

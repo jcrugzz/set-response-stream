@@ -21,7 +21,7 @@ function SetResponseStream(stream, opts) {
   this.statusMessage = opts.statusMessage || undefined;
   this.headers = opts.headers || {};
   this.ready = opts.trigger;
-  this.stream.on('error', this.emit.bind(this.stream, 'error'));
+  this.stream.on('error', this.emit.bind(this, 'error'));
 }
 
 /**
