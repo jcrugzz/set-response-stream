@@ -1,4 +1,6 @@
 # set-response-stream
+[![Build
+Status](https://travis-ci.org/jcrugzz/set-response-stream.svg?branch=master)](https://travis-ci.org/jcrugzz/set-response-stream)
 
 A Stream like object that wraps a given readable stream when being used to pipe
 to a response stream.
