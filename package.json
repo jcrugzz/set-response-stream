@@ -1,6 +1,6 @@
 {
   "name": "set-response-stream",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Stream like object that wraps a given readable stream when being used to pipe to a response stream",
   "main": "index.js",
   "scripts": {
